@@ -71,7 +71,6 @@ beans, jars, crates = secret_formula(start_point)
 puts "With a starting point of: #{start_point}"
 puts "We'd have #{beans}, #{jars} jars, and #{crates} crates."
 
-start_point /=  10
 
 sentence = 'All good things come to those who wait.'
 words = Ex25.break_words(sentence)
@@ -80,6 +79,6 @@ Ex25.print_first_word(words)
 Ex25.print_last_word(words)
 Ex25.print_first_word(sorted_words)
 Ex25.print_last_word(sorted_words)
-sorted_sentence = Ex25.sort_sentence(sentence)
+Ex25.sort_sentence(sentence)
 Ex25.print_first_and_last(sentence)
 Ex25.print_first_and_last_sorted(sentence)
